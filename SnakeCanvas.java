@@ -39,7 +39,7 @@ public class SnakeCanvas extends Canvas implements Runnable, KeyListener {
     /** metoda rysujaca siatke*/
     public void drawGrid(Graphics g) {
         // rysowanie zewnetrnego prostokata
-        g.setColor(Color.LIGHT_GRAY);
+        g.setColor(Color.GRAY);
         g.drawRect(0, 0, GridWidth * BoxWidth, GridHeight * BoxHeight);
         //rysowanie wewnetrznych lini pionowych duzego prostokata
 
@@ -51,7 +51,7 @@ public class SnakeCanvas extends Canvas implements Runnable, KeyListener {
         for (int j = BoxHeight; j < GridHeight * BoxHeight; j += BoxHeight) {
             g.drawLine(0, j, BoxWidth * GridWidth, j);
         }
-        g.setColor(Color.LIGHT_GRAY);
+        g.setColor(Color.GRAY);
     }
     /** metoda rysujaca ramke obszaru gry*/
     public void drawFrame(Graphics g){
@@ -60,7 +60,7 @@ public class SnakeCanvas extends Canvas implements Runnable, KeyListener {
     }
     /** metoda rysujaca weza*/
     public void drawSnake(Graphics g) {
-        g.setColor(Color.BLACK);//kolor węża
+        g.setColor(Color.WHITE);//kolor węża
         for (Point pkt : snake) {
             g.fillRect(pkt.x * BoxWidth, pkt.y * BoxHeight, BoxWidth, BoxHeight);
         }
@@ -68,7 +68,7 @@ public class SnakeCanvas extends Canvas implements Runnable, KeyListener {
     }
     /** metoda rysujaca owoc*/
     public void drawFruit(Graphics g) {
-        g.setColor(Color.ORANGE);
+        g.setColor(Color.GREEN);
         g.fillRect(fruit.x * BoxWidth, fruit.y * BoxHeight, BoxWidth, BoxHeight);
         g.setColor(Color.BLACK);
     }
@@ -76,19 +76,25 @@ public class SnakeCanvas extends Canvas implements Runnable, KeyListener {
     public void draw(Graphics g) {
         //czyszczenie sladow
         g.clearRect(0, 0, BoxWidth * GridWidth + 20, BoxHeight * GridHeight + 20);
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, BoxWidth * GridWidth + 20, BoxHeight * GridHeight + 200);
         drawGrid(g);
         drawSnake(g);
         drawFruit(g);
         returnScore(g);
+        g.setColor(Color.BLACK);
     }
     /** metoda grupujaca elementy w jedna metode bez siatki*/
     public void draw2(Graphics g) {
         //czyszczenie sladow
         g.clearRect(0, 0, BoxWidth * GridWidth + 20, BoxHeight * GridHeight + 20);
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, BoxWidth * GridWidth + 20, BoxHeight * GridHeight + 200);
         drawFrame(g);
         drawSnake(g);
         drawFruit(g);
         returnScore(g);
+        g.setColor(Color.BLACK);
     }
     /** impelementacja metody paint na srodowysku graficznym, wykorzystujaca watek do odswiezania ekranu*/
     public void paint(Graphics g) {
@@ -228,6 +234,7 @@ public class SnakeCanvas extends Canvas implements Runnable, KeyListener {
     }
     /** metoda wyswietlania najwyzszego wyniku*/
     public void returnScore(Graphics g) {
+        g.setColor(Color.WHITE);
         g.drawString("Score : " + score, 0, BoxHeight * GridHeight + 10);
         g.drawString("Highscore : "+ highScore,0, BoxHeight*GridHeight+20);
 
