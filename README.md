@@ -1,4 +1,9 @@
 # Waz
+Progam w części funkcjonalnej gry oparty na podstawie tutorialu online 
+- Autor BrandonioProductions
+link: https://www.youtube.com/watch?v=FABTl1Q1byw&list=PL13bz4SHGmRzIHoVh-B30U7jttLxYN_yi&index=38
+
+
 ====================Opis gry: Waz===================
 
 Gra polegająca na odnajdywaniu owoców przy unikaniu zderzenia ze ścianą, bądź elementami węża.
