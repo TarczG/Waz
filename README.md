@@ -3,21 +3,18 @@
 ![WidokWaz](https://user-images.githubusercontent.com/63725366/79580613-8d8f9300-80c9-11ea-8cb8-97dabb427006.JPG)
 
 
-Progam w części funkcjonalnej gry oparty na podstawie tutorialu online 
-- Autor BrandonioProductions
-link: https://www.youtube.com/watch?v=FABTl1Q1byw&list=PL13bz4SHGmRzIHoVh-B30U7jttLxYN_yi&index=38
+- Progam w części funkcjonalnej gry oparty na podstawie tutorialu online 
+  - Autor BrandonioProductions
+  - link: https://www.youtube.com/watch?v=FABTl1Q1byw&list=PL13bz4SHGmRzIHoVh-B30U7jttLxYN_yi&index=38
 
 
-====================Opis gry: Waz===================
+- Opis gry: Waz
 
-Gra polegająca na odnajdywaniu owoców przy unikaniu zderzenia ze ścianą, bądź elementami węża.
-Gra z rekordem wyników, możliwośćią pauzy oraz wyświetlania/ukrywania siatki
-Gra z dowolną ilością podejść.
+  - Gra polegająca na odnajdywaniu owoców przy unikaniu zderzenia ze ścianą, bądź elementami węża.
+  - Gra z rekordem wyników, możliwośćią pauzy oraz wyświetlania/ukrywania siatki
+  - Gra z dowolną ilością podejść.
 
-=========Założenia przyjęte dla potrzeb projektu======
-
-- program w dużej mierze w formie proceduralnej
-
-- program oparty na bibliotece Swing, oraz AWT.
-
-- program zapisujący na dysku plik higscore.dat z którego odczytuje i zapisuje najwyższy wynik.
+- Założenia przyjęte dla potrzeb projektu
+  - program w dużej mierze w formie proceduralnej
+  - program oparty na bibliotece Swing, oraz AWT.
+  - program zapisujący na dysku plik higscore.dat z którego odczytuje i zapisuje najwyższy wynik.
