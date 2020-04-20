@@ -1,6 +1,6 @@
 ## Waz
 
-![WidokWaz](https://user-images.githubusercontent.com/63725366/79580613-8d8f9300-80c9-11ea-8cb8-97dabb427006.JPG)
+![WidokWaz](https://user-images.githubusercontent.com/63725366/79733366-42f25e80-82f5-11ea-8ed0-efb713c79ae1.JPG)
 
 
 - Progam w części funkcjonalnej gry oparty na podstawie tutorialu online 
